@@ -8,7 +8,20 @@ La funzione deve restituire il valore dell'area del triangolo.
 Assicurati di testare la funzione con almeno tre coppie di valori per base e altezza e stampare i risultati.
 
 
-​
+​<?php
+// Definizione della funzione calcolaAreaTriangolo
+function calcolaAreaTriangolo($base, $altezza) {
+    $prodotto = $base * $altezza; // Moltiplica la base per l'altezza
+    $area = $prodotto / 2;        // Divide il risultato per 2 per ottenere l'area
+    return $area;                 // Restituisce l'area calcolata
+}
+
+$base1 = 5;
+$altezza1 = 10;
+$area1 = calcolaAreaTriangolo($base1, $altezza1);
+echo "L'area del triangolo con base $base1 e altezza $altezza1 è: $area1<br>";
+?>
+
 
 
 Soluzione
